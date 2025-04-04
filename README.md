@@ -1,4 +1,3 @@
-# ebenezeriheme.github.io
 # Iheme Ebenezer's Data Analyst Portfolio
 
 Welcome to my data analyst portfolio website. This site showcases my skills, projects, and experience in data analysis.
