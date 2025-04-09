@@ -1,18 +1,18 @@
 /* Global Styles */
 :root {
-    --primary-color: #64ffda;    /* Mint/Aqua */
-    --secondary-color: #0a192f;  /* Deep Navy */
-    --accent-color: #ffd700;     /* Gold */
-    --text-color: #e6f1ff;      /* Ice Blue */
-    --text-color-secondary: #8892b0; /* Muted Blue */
-    --background-dark: #0a192f;  /* Deep Navy */
-    --background-darker: #020c1b; /* Darker Navy */
-    --card-background: rgba(17, 34, 64, 0.7);  /* Semi-transparent Navy */
-    --card-shadow: rgba(100, 255, 218, 0.1);
-    --nav-background: rgba(2, 12, 27, 0.8);
-    --gradient-1: #0a192f;
-    --gradient-2: #112240;
-    --gradient-3: #233554;
+    --primary-color: #465957;    /* Lighter green */
+    --secondary-color: #273d3b;  /* Medium green */
+    --accent-color: #304643;     /* Medium-dark green */
+    --text-color: #ffffff;       /* White for better contrast */
+    --text-color-secondary: #c5c5c5; /* Light gray for secondary text */
+    --background-dark: #1a2623;  /* Dark green */
+    --background-darker: #0e1614; /* Very dark green */
+    --card-background: rgba(39, 61, 59, 0.7);  /* Semi-transparent medium green */
+    --card-shadow: rgba(70, 89, 87, 0.1);
+    --nav-background: rgba(14, 22, 20, 0.8);
+    --gradient-1: #0e1614;
+    --gradient-2: #1a2623;
+    --gradient-3: #273d3b;
 }
 
 * {
@@ -28,6 +28,7 @@ body {
     background-color: var(--background-dark);
     background: linear-gradient(135deg, var(--gradient-1), var(--gradient-2), var(--gradient-3));
     background-attachment: fixed;
+    min-height: 100vh;
 }
 
 /* Navigation */
@@ -38,7 +39,7 @@ nav {
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
     z-index: 1000;
-    border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+    border-bottom: 1px solid rgba(70, 89, 87, 0.1);
 }
 
 .nav-content {
@@ -64,7 +65,7 @@ nav {
     border-radius: 15px;
     object-fit: cover;
     border: 2px solid var(--primary-color);
-    box-shadow: 0 8px 32px rgba(100, 255, 218, 0.2);
+    box-shadow: 0 8px 32px rgba(70, 89, 87, 0.2);
     margin-bottom: 2rem;
     transition: all 0.3s ease;
     filter: brightness(1.1) contrast(1.1);
@@ -72,7 +73,7 @@ nav {
 
 .profile-img:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(100, 255, 218, 0.3);
+    box-shadow: 0 15px 40px rgba(70, 89, 87, 0.3);
     border-color: var(--accent-color);
 }
 
@@ -100,8 +101,8 @@ nav {
 .hero {
     height: 100vh;
     background: linear-gradient(135deg, 
-        rgba(2, 12, 27, 0.9), 
-        rgba(10, 25, 47, 0.8)), 
+        rgba(14, 22, 20, 0.9), 
+        rgba(26, 38, 35, 0.8)), 
         url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
     background-size: cover;
     background-position: center;
@@ -111,6 +112,7 @@ nav {
     justify-content: center;
     text-align: center;
     position: relative;
+    z-index: 1;
 }
 
 .hero::after {
@@ -135,7 +137,7 @@ nav {
     background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 4px rgba(14, 22, 20, 0.3);
 }
 
 .hero-content h1.title {
@@ -157,6 +159,8 @@ nav {
 section {
     padding: 5rem 2rem;
     background-color: var(--background-darker);
+    position: relative;
+    z-index: 1;
 }
 
 section h2 {
@@ -167,7 +171,7 @@ section h2 {
     background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    text-shadow: 2px 2px 4px rgba(14, 22, 20, 0.1);
 }
 
 /* About Section */
@@ -188,7 +192,7 @@ section h2 {
     padding: 3rem;
     border-radius: 15px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(100, 255, 218, 0.1);
+    border: 1px solid rgba(70, 89, 87, 0.1);
 }
 
 .profile-container {
@@ -228,12 +232,12 @@ section h2 {
     overflow: hidden;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, border-color 0.3s ease;
-    border: 1px solid rgba(100, 255, 218, 0.1);
+    border: 1px solid rgba(70, 89, 87, 0.1);
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 40px rgba(100, 255, 218, 0.15);
+    box-shadow: 0 12px 40px rgba(70, 89, 87, 0.15);
     border-color: var(--primary-color);
 }
 
@@ -338,8 +342,8 @@ section h2 {
 #contact-form input:focus,
 #contact-form textarea:focus {
     border-color: var(--primary-color);
-    box-shadow: 0 0 10px rgba(100, 255, 218, 0.2);
-    background: rgba(2, 12, 27, 0.8);
+    box-shadow: 0 0 10px rgba(70, 89, 87, 0.2);
+    background: rgba(14, 22, 20, 0.8);
 }
 
 #contact-form button {
@@ -354,9 +358,9 @@ section h2 {
 }
 
 #contact-form button:hover {
-    background: rgba(100, 255, 218, 0.1);
+    background: rgba(70, 89, 87, 0.1);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(100, 255, 218, 0.2);
+    box-shadow: 0 5px 15px rgba(70, 89, 87, 0.2);
 }
 
 .social-links {
@@ -387,17 +391,57 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    nav {
+        position: fixed;
+        width: 100%;
+        background-color: var(--nav-background);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        border-bottom: 1px solid rgba(70, 89, 87, 0.1);
+    }
+
     .nav-content {
         flex-direction: column;
-        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
     }
 
     .nav-links {
-        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
     }
 
     .nav-links li {
-        margin: 0 1rem;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 0.3rem;
+        color: var(--text-color);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 0.8rem;
+        transition: color 0.3s ease;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .nav-links a:hover {
+        color: var(--primary-color);
     }
 
     .hero-content h1.name {
@@ -423,11 +467,94 @@ footer {
     .profile-section {
         padding: 2rem 1rem;
     }
+    
+    /* Project cards for mobile */
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+    
+    .project-card {
+        margin-bottom: 1rem;
+    }
+    
+    /* Skills section for mobile */
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+    
+    /* Contact form for mobile */
+    .contact-content {
+        padding: 1.5rem;
+        margin: 0 1rem;
+    }
+    
+    #contact-form input,
+    #contact-form textarea {
+        padding: 0.8rem;
+    }
+    
+    /* Section padding adjustment */
+    section {
+        padding: 3rem 1rem;
+    }
+    
+    section h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
 }
 
 @media (max-width: 480px) {
     .profile-img {
         width: 180px;
         height: 180px;
+    }
+    
+    .hero-content h1.name {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content h1.title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .nav-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .nav-links a {
+        font-size: 0.75rem;
+    }
+    
+    .about-text p {
+        font-size: 1rem;
+    }
+    
+    .project-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .project-card p {
+        font-size: 0.9rem;
+    }
+    
+    .skill-category h3 {
+        font-size: 1.2rem;
+    }
+    
+    .skill-category li {
+        font-size: 0.9rem;
+    }
+    
+    .social-links a {
+        font-size: 1.5rem;
     }
 } 
