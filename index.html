@@ -1,5 +1,42 @@
-// ... existing code ...
-    <!-- Force rebuild -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">My Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="name">Your Name</h1>
+            <h1 class="title">Data Analyst &amp; Developer</h1>
+            <p>Turning data into actionable insights and beautiful dashboards.</p>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="about-content">
+            <div class="profile-section">
+                <div class="profile-container">
+                    <img src="https://via.placeholder.com/250x250.png?text=Profile" alt="Profile" class="profile-img">
+                </div>
+                <div class="about-text">
+                    <p>Hello! I'm a passionate data analyst and developer with experience in transforming data into meaningful insights. I love building dashboards, predictive models, and automated data pipelines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="projects" class="projects">
         <h2>Projects</h2>
         <div class="project-grid">
@@ -23,3 +60,52 @@
             </div>
         </div>
     </section>
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Data Analysis</h3>
+                <ul>
+                    <li>SQL</li>
+                    <li>Excel</li>
+                    <li>Power BI</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Programming</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>R</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Other</h3>
+                <ul>
+                    <li>Data Visualization</li>
+                    <li>Machine Learning</li>
+                    <li>ETL Pipelines</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <div class="contact-content">
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="#" title="LinkedIn"><span>LinkedIn</span></a>
+                <a href="#" title="GitHub"><span>GitHub</span></a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        &copy; 2024 Your Name. All rights reserved.
+    </footer>
+</body>
+</html>
