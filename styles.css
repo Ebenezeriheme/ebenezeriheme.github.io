@@ -1,18 +1,18 @@
 /* Global Styles */
 :root {
-    --primary-color: #465957;    /* Lighter green */
-    --secondary-color: #273d3b;  /* Medium green */
-    --accent-color: #304643;     /* Medium-dark green */
-    --text-color: #ffffff;       /* White for better contrast */
-    --text-color-secondary: #c5c5c5; /* Light gray for secondary text */
-    --background-dark: #1a2623;  /* Dark green */
-    --background-darker: #0e1614; /* Very dark green */
-    --card-background: rgba(39, 61, 59, 0.7);  /* Semi-transparent medium green */
-    --card-shadow: rgba(70, 89, 87, 0.1);
-    --nav-background: rgba(14, 22, 20, 0.8);
-    --gradient-1: #0e1614;
-    --gradient-2: #1a2623;
-    --gradient-3: #273d3b;
+    --primary-color: #2563eb;    /* Blue-600 */
+    --secondary-color: #1e40af;  /* Blue-800 */
+    --accent-color: #60a5fa;     /* Blue-400 */
+    --text-color: #1e293b;       /* Slate-800 */
+    --text-color-secondary: #64748b; /* Slate-500 */
+    --background-dark: #ffffff;   /* White */
+    --background-darker: #f1f5f9; /* Slate-100 */
+    --card-background: #f8fafc;   /* Slate-50 */
+    --card-shadow: rgba(37, 99, 235, 0.08);
+    --nav-background: rgba(37, 99, 235, 0.95);
+    --gradient-1: #e0e7ff;
+    --gradient-2: #60a5fa;
+    --gradient-3: #2563eb;
 }
 
 * {
@@ -22,7 +22,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-dark);
@@ -40,6 +40,7 @@ nav {
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     border-bottom: 1px solid rgba(70, 89, 87, 0.1);
+    color: #fff;
 }
 
 .nav-content {
@@ -54,7 +55,7 @@ nav {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--primary-color);
+    color: #fff;
     display: flex;
     align-items: center;
 }
@@ -230,9 +231,9 @@ section h2 {
     backdrop-filter: blur(10px);
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 32px var(--card-shadow);
     transition: transform 0.3s ease, border-color 0.3s ease;
-    border: 1px solid rgba(70, 89, 87, 0.1);
+    border: 1px solid var(--primary-color);
     display: flex;
     flex-direction: column;
 }
@@ -252,7 +253,7 @@ section h2 {
 
 .project-card h3 {
     padding: 1rem 1rem 0.5rem;
-    color: var(--text-color);
+    color: var(--primary-color);
     font-size: 1.3rem;
 }
 
@@ -294,17 +295,17 @@ section h2 {
 .project-link {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background-color: transparent;
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    border: 1px solid var(--primary-color);
+    border: none;
     transition: all 0.3s ease;
     font-size: 0.9rem;
 }
 
 .project-link:hover {
-    background-color: rgba(70, 89, 87, 0.1);
+    background-color: var(--secondary-color);
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(70, 89, 87, 0.2);
 }
