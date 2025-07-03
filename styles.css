@@ -562,4 +562,12 @@ footer {
     .social-links a {
         font-size: 1.5rem;
     }
+}
+
+@media (max-width: 600px) {
+    .hero-main {
+        font-size: 2.2rem;
+        padding: 0 0.5rem;
+        word-break: break-word;
+    }
 } 
