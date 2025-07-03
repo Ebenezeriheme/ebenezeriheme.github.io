@@ -155,6 +155,16 @@ nav {
     opacity: 0.95;
 }
 
+.hero-main {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    margin-bottom: 0;
+}
+
 /* Sections */
 section {
     padding: 5rem 2rem;
