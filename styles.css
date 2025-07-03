@@ -69,8 +69,6 @@ nav {
     margin-bottom: 2rem;
     transition: all 0.3s ease;
     filter: brightness(1.1) contrast(1.1);
-    padding: 20px;
-    background: #fff; /* Optional: makes the border stand out */
 }
 
 .profile-img:hover {
