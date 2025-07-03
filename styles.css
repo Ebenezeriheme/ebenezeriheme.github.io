@@ -5,7 +5,7 @@
     --accent-color: #60a5fa;     /* Blue-400 */
     --text-color: #1e293b;       /* Slate-800 */
     --text-color-secondary: #64748b; /* Slate-500 */
-    --background-dark: #ffffff;   /* White */
+    --background-dark: #E9E8EF;   /* White */
     --background-darker: #f1f5f9; /* Slate-100 */
     --card-background: #f8fafc;   /* Slate-50 */
     --card-shadow: rgba(37, 99, 235, 0.08);
@@ -26,8 +26,7 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-dark);
-    background: linear-gradient(135deg, var(--gradient-1), var(--gradient-2), var(--gradient-3));
-    background-attachment: fixed;
+    background: none;
     min-height: 100vh;
 }
 
