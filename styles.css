@@ -296,36 +296,46 @@ section h2 {
 }
 
 .project-links {
-    margin-top: auto;
-    padding: 1rem;
     display: flex;
-    gap: 1rem;
+    flex-direction: row;
     justify-content: flex-start;
+    align-items: stretch;
 }
 
 .project-link {
-    display: inline-block;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 0.5rem 1rem;
     background-color: var(--primary-color);
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 0;
     border: none;
     transition: all 0.3s ease;
     font-size: 0.9rem;
     text-align: center;
 }
 
-.project-link:hover {
-    background-color: var(--secondary-color);
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(70, 89, 87, 0.2);
+.project-link:first-child {
+    border-radius: 0 0 0 10px;
+}
+
+.project-link:last-child {
+    border-radius: 0 0 10px 0;
 }
 
 .project-link + .project-link {
     border-left: 3px solid #fff;
-    margin-left: 0.7rem;
+    margin-left: 0;
     padding-left: 0.7rem;
+}
+
+.project-link:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(70, 89, 87, 0.2);
 }
 
 /* Skills Section */
