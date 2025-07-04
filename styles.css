@@ -305,6 +305,7 @@ section h2 {
 
 .project-link {
     display: inline-block;
+    flex: 1;
     padding: 0.5rem 1rem;
     background-color: var(--primary-color);
     color: #fff;
@@ -313,6 +314,7 @@ section h2 {
     border: none;
     transition: all 0.3s ease;
     font-size: 0.9rem;
+    text-align: center;
 }
 
 .project-link:hover {
@@ -322,7 +324,7 @@ section h2 {
 }
 
 .project-link + .project-link {
-    border-left: 2px solid #fff;
+    border-left: 3px solid #fff;
     margin-left: 0.7rem;
     padding-left: 0.7rem;
 }
