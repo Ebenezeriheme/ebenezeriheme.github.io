@@ -321,6 +321,12 @@ section h2 {
     box-shadow: 0 5px 15px rgba(70, 89, 87, 0.2);
 }
 
+.project-link + .project-link {
+    border-left: 2px solid #fff;
+    margin-left: 0.7rem;
+    padding-left: 0.7rem;
+}
+
 /* Skills Section */
 .skills-grid {
     display: grid;
