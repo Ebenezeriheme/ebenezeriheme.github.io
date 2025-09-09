@@ -1,18 +1,18 @@
 /* Global Styles */
 :root {
-    --primary-color: #2563eb;    /* Blue-600 */
-    --secondary-color: #1e40af;  /* Blue-800 */
-    --accent-color: #60a5fa;     /* Blue-400 */
-    --text-color: #1e293b;       /* Slate-800 */
-    --text-color-secondary: #64748b; /* Slate-500 */
-    --background-dark: #E9E8EF;   /* White */
-    --background-darker: #f1f5f9; /* Slate-100 */
-    --card-background: #f8fafc;   /* Slate-50 */
-    --card-shadow: rgba(37, 99, 235, 0.08);
-    --nav-background: rgba(37, 99, 235, 0.95);
-    --gradient-1: #e0e7ff;
-    --gradient-2: #60a5fa;
-    --gradient-3: #2563eb;
+    --primary-color: #16a34a;    /* Green-600 */
+    --secondary-color: #065f46;  /* Emerald-800 */
+    --accent-color: #22c55e;     /* Green-500 */
+    --text-color: #0f172a;       /* Slate-900 */
+    --text-color-secondary: #475569; /* Slate-600 */
+    --background-dark: #e8f5e9;   /* subtle field green tint */
+    --background-darker: #f3f6f4; /* light neutral */
+    --card-background: #ffffff;   /* white */
+    --card-shadow: rgba(34, 197, 94, 0.08);
+    --nav-background: rgba(6, 95, 70, 0.95);
+    --gradient-1: #dcfce7;
+    --gradient-2: #86efac;
+    --gradient-3: #16a34a;
 }
 
 * {
@@ -88,13 +88,13 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--text-color);
+    color: #fff;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: var(--primary-color);
+    color: var(--accent-color);
 }
 
 /* Hero Section */
@@ -115,7 +115,7 @@ nav {
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0,0,0,0.4); /* dark overlay for readability */
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(6, 95, 70, 0.3));
     z-index: 1;
 }
 
@@ -138,6 +138,7 @@ nav {
     font-weight: 700;
     letter-spacing: 2px;
     background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -178,6 +179,7 @@ section h2 {
     color: var(--primary-color);
     font-size: 2.5rem;
     background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 2px 2px 4px rgba(14, 22, 20, 0.1);
@@ -232,6 +234,103 @@ section h2 {
     gap: 2rem;
     max-width: 1600px;
     margin: 0 auto;
+}
+
+/* Projects v2 (reference layout) */
+.section-title {
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+    position: relative;
+}
+.section-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: var(--accent-color);
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+.projects-grid-v2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem 2rem;
+}
+
+.project-card-v2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+.project-card-v2 h3 {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    color: var(--text-color);
+}
+
+.project-card-v2 p {
+    color: var(--text-color-secondary);
+    margin-top: 0.5rem;
+}
+
+.project-card-v2 .tools-used {
+    margin-top: 0.8rem;
+}
+
+.project-ctas {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.btn {
+    background: #7cc6f1;
+    color: #0f172a;
+    text-decoration: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 6px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 0 rgba(15, 23, 42, 0.2);
+    transition: transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.2);
+}
+
+.btn-alt {
+    background: #8fd0f4;
+}
+
+.btn-wide {
+    padding: 0.9rem 2rem;
+}
+
+.projects-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+@media (max-width: 900px) {
+    .projects-grid-v2 {
+        grid-template-columns: 1fr;
+    }
+    .section-title {
+        text-align: center;
+    }
+    .section-title::after {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .project-card {
@@ -307,15 +406,18 @@ section h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.5rem 1rem;
-    background-color: var(--primary-color);
-    color: #fff;
+    padding: 0.8rem 1.2rem;
+    background: #7cc6f1;
+    color: #0f172a;
     text-decoration: none;
     border-radius: 0;
     border: none;
-    transition: all 0.3s ease;
-    font-size: 0.9rem;
+    transition: transform 0.1s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
     text-align: center;
+    box-shadow: 0 2px 0 rgba(15, 23, 42, 0.2);
 }
 
 .project-link:first-child {
@@ -333,9 +435,9 @@ section h2 {
 }
 
 .project-link:hover {
-    background-color: var(--secondary-color);
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(70, 89, 87, 0.2);
+    background: #8fd0f4;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.2);
 }
 
 /* Skills Section */
@@ -412,20 +514,23 @@ section h2 {
 }
 
 #contact-form button {
-    padding: 1rem;
-    background: transparent;
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-    border-radius: 5px;
+    padding: 0.8rem 1.2rem;
+    background: #7cc6f1;
+    color: #0f172a;
+    border: none;
+    border-radius: 6px;
     cursor: pointer;
     font-size: 1rem;
-    transition: all 0.3s ease;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 0 rgba(15, 23, 42, 0.2);
+    transition: transform 0.1s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
 #contact-form button:hover {
-    background: rgba(70, 89, 87, 0.1);
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(70, 89, 87, 0.2);
+    background: #8fd0f4;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.2);
 }
 
 .social-links {
