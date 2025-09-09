@@ -310,12 +310,30 @@ section h2 {
 }
 
 @media (max-width: 900px) {
+    .about {
+        padding: 3rem 1rem;
+    }
     .about-inner {
         grid-template-columns: 1fr;
         text-align: center;
+        gap: 2rem;
     }
     .about-left { align-items: center; }
-    .about-ctas { justify-content: center; }
+    .about-ctas { 
+        justify-content: center; 
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    .about-heading {
+        font-size: 2.2rem;
+    }
+    .about-subtext {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+    .about-illustration {
+        max-width: 300px;
+    }
 }
 
 /* Projects Section */
@@ -664,18 +682,17 @@ footer {
 
     .nav-content {
         flex-direction: column;
-        padding: 0.5rem;
+        padding: 0.8rem 1rem;
     }
 
     .logo {
-        font-size: 1.2rem;
-        margin-bottom: 0.5rem;
+        font-size: 1.3rem;
+        margin-bottom: 0.8rem;
     }
 
     .nav-links {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 0.5rem;
+        display: flex;
+        justify-content: space-between;
         width: 100%;
         margin: 0;
         padding: 0;
@@ -690,19 +707,17 @@ footer {
 
     .nav-links a {
         display: block;
-        padding: 0.3rem;
-        color: var(--text-color);
+        padding: 0.4rem 0.2rem;
+        color: #fff;
         text-decoration: none;
         font-weight: 500;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         transition: color 0.3s ease;
         white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
 
     .nav-links a:hover {
-        color: var(--primary-color);
+        color: var(--accent-color);
     }
 
     .hero-content h1.name {
