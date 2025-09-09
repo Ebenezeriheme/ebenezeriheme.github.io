@@ -213,6 +213,8 @@ nav {
     height: auto;
     border-radius: 0;
     box-shadow: none;
+    background: transparent;
+    mix-blend-mode: multiply;
 }
 
 @media (max-width: 900px) {
