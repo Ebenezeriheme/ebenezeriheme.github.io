@@ -782,6 +782,17 @@ footer {
         font-size: 2rem;
         margin-bottom: 2rem;
     }
+
+    /* Ensure hero content isn't hidden behind fixed navbar */
+    .hero,
+    .hero-v2 {
+        margin-top: 72px; /* approx mobile nav height */
+    }
+
+    /* Tweak hero heading for small screens */
+    .hero-heading {
+        font-size: 2.2rem;
+    }
 }
 
 @media (max-width: 480px) {
