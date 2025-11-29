@@ -3,139 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sports Data Analyst | Iheme Ebenezer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Ebenezer Iheme — Data Analyst Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <nav>
-        <div class="nav-content">
-            <div class="logo">Iheme Ebenezer</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <section id="about" class="about">
-        <div class="about-inner">
-            <div class="about-left">
-                <p class="about-eyebrow">Iheme Ebenezer's Portfolio</p>
-                <h1 class="about-heading">Hi, I'm Iheme Ebenezer</h1>
-                <p class="about-subtext">I am a Sports Data Analyst who uses Power BI, SQL, and Python to turn football match and player data into clear, actionable insights. I help reveal patterns in performance, inform scouting decisions, and support match strategy through rigorous analytics and compelling visuals.</p>
-                <div class="about-ctas">
-                    <a href="#contact" class="btn">CONTACT ME</a>
-                    <a href="#projects" class="btn btn-alt">VIEW PROJECTS</a>
-                </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <h2 class="logo">Ebenezer Iheme</h2>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
             </div>
-            <div class="about-right">
-                <img src="images/image.cart.jpg" alt="Cartoon portrait of Iheme Ebenezer" class="about-illustration" />
-            </div>
-        </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero container">
+        <h1>Data Analyst</h1>
+        <p>I transform raw data into actionable insights using analytics, visualization,
+        and business intelligence tools.</p>
+        <a href="#projects" class="btn">View My Work</a>
     </section>
-    <section id="projects" class="projects">
+
+    <!-- About -->
+    <section id="about" class="section container">
+        <h2 class="section-title">About Me</h2>
+        <p class="about-text">
+            I am a data analyst skilled in Python, SQL, Power BI, and statistical analytics.
+            I specialize in turning complex datasets into clear, business-ready insights that drive decision-making.
+            My work includes dashboards, exploratory analysis, predictive modelling, and storytelling with data.
+        </p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section container">
         <h2 class="section-title">Projects</h2>
-        <div class="projects-grid-v2">
-            <article class="project-card-v2">
-                <img src="https://via.placeholder.com/1200x675/0f172a/ffffff?text=Player+Performance+Dashboard" alt="Player Performance Dashboard">
-                <h3>Player Performance Dashboard</h3>
-                <p>A comprehensive BI dashboard tracking xG, xA, pressures, shot maps, and possession sequences for player benchmarking across leagues.</p>
-                <p class="tools-used"><strong>Tools Used:</strong> Power BI, Python, SQL</p>
-                <div class="project-ctas">
-                    <a href="#" class="btn">READ ARTICLE</a>
-                    <a href="https://app.powerbi.com/view?r=eyJrIjoiMjgyNWMwMDAtYmJiYi00NWM0LTg3ZDctYTM1NjRhYjYyZWQzIiwidCI6ImRkMmNjMDA4LTU1NTAtNGViYy1iMzM2LTg1OWU5MGE3MDI1YiJ9&pageName=fe85857f1851e0084019" target="_blank" rel="noopener noreferrer" class="btn btn-alt">DASHBOARD</a>
-                </div>
-            </article>
-            <article class="project-card-v2">
-                <img src="https://via.placeholder.com/1200x675/0f172a/ffffff?text=Match+Outcome+Prediction" alt="Match Outcome Prediction">
-                <h3>Match Outcome Prediction</h3>
-                <p>Supervised model powered by ELO, team form, injuries, and schedule density to estimate probabilities for win/draw/loss pre-match.</p>
-                <p class="tools-used"><strong>Tools Used:</strong> Python, scikit-learn, Pandas</p>
-                <div class="project-ctas">
-                    <a href="#" class="btn">READ ARTICLE</a>
-                    <a href="#" class="btn btn-alt">GITHUB</a>
-                </div>
-            </article>
-            <article class="project-card-v2">
-                <img src="https://via.placeholder.com/1200x675/0f172a/ffffff?text=Scouting+Insights" alt="Scouting Insights">
-                <h3>Scouting Insights</h3>
-                <p>ETL pipeline integrating event data to surface role-based shortlists using percentile ranks and similarity search.</p>
-                <p class="tools-used"><strong>Tools Used:</strong> Python, SQL, Power BI</p>
-                <div class="project-ctas">
-                    <a href="#" class="btn">READ ARTICLE</a>
-                    <a href="#" class="btn btn-alt">GITHUB</a>
-                </div>
-            </article>
-            <article class="project-card-v2">
-                <img src="https://via.placeholder.com/1200x675/0f172a/ffffff?text=Shot+Map+Explorer" alt="Shot Map Explorer">
-                <h3>Shot Map Explorer</h3>
-                <p>Interactive visuals for shot quality, location density, and finishing trends with filters by player, team, and competition.</p>
-                <p class="tools-used"><strong>Tools Used:</strong> Power BI, DAX</p>
-                <div class="project-ctas">
-                    <a href="#" class="btn">READ ARTICLE</a>
-                    <a href="#" class="btn btn-alt">DASHBOARD</a>
-                </div>
-            </article>
-        </div>
-        <div class="projects-more">
-            <a href="#" class="btn btn-wide">VIEW MORE PROJECTS...</a>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <h3>Titanic Survival Analysis</h3>
+                <p>Explored demographic and socioeconomic factors influencing survival likelihood using Python and ML techniques.</p>
+                <a href="#" class="project-link">View Project →</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Sales Performance Dashboard</h3>
+                <p>Interactive Power BI dashboard revealing revenue trends, top-performing products, and customer segments.</p>
+                <a href="#" class="project-link">View Project →</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Football Player Stats Analysis</h3>
+                <p>SQL + Python project analyzing player performance, expected goals, and market value insights.</p>
+                <a href="#" class="project-link">View Project →</a>
+            </div>
+
         </div>
     </section>
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
+
+    <!-- Skills -->
+    <section id="skills" class="section container">
+        <h2 class="section-title">Technical Skills</h2>
+
         <div class="skills-grid">
-            <div class="skill-category">
-                <h3>Data Analysis</h3>
-                <ul>
-                    <li>SQL</li>
-                    <li>Python</li>
-                    <li>Excel</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>Data Visualization</h3>
-                <ul>
-                    <li>Power BI</li>
-                    <li>Tableau</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>Sports Analytics</h3>
-                <ul>
-                    <li>xG/xA modeling</li>
-                    <li>Event & tracking data analysis</li>
-                    <li>Team strength/ELO rating</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>Other</h3>
-                <ul>
-                    <li>Canva</li>
-                </ul>
-            </div>
+            <div class="skill-item">Python</div>
+            <div class="skill-item">SQL</div>
+            <div class="skill-item">Power BI</div>
+            <div class="skill-item">NumPy / Pandas</div>
+            <div class="skill-item">Data Cleaning</div>
+            <div class="skill-item">Data Visualization</div>
+            <div class="skill-item">Statistics</div>
+            <div class="skill-item">Excel</div>
         </div>
     </section>
-    <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <div class="contact-content">
-            <form id="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener noreferrer" title="LinkedIn"><span>LinkedIn</span></a>
-                <a href="https://github.com/your-handle" target="_blank" rel="noopener noreferrer" title="GitHub"><span>GitHub</span></a>
-            </div>
-        </div>
+
+    <!-- Contact -->
+    <section id="contact" class="section container">
+        <h2 class="section-title">Contact</h2>
+        <p>If you’d like to collaborate, request a dashboard, or discuss data-driven solutions — feel free to reach out.</p>
+        <p>Email: <a href="mailto:youremail@gmail.com">youremail@gmail.com</a></p>
     </section>
+
     <footer>
-        &copy; 2024 Iheme Ebenezer. All rights reserved.
+        © 2024 Ebenezer Iheme. All rights reserved.
     </footer>
+
 </body>
 </html>
