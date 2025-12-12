@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: "Segoe UI", sans-serif;
     color: #111;
-    /* --- UPDATED GRADIENT: Darker, Purplish end-stop --- */
+    /* UPDATED GRADIENT: Darker, Purplish end-stop */
     background: linear-gradient(160deg, #0A1A2F 0%, #0F4C81 40%, #7788AA 100%);
     background-attachment: fixed;
 }
@@ -206,13 +206,42 @@ footer {
 /* --------- Media Query for Mobile (Adjustments) --------- */
 @media (max-width: 768px) {
 
-    /* Icon size reduced from 48px to 42px for mobile */
-    #contact .social-links a {
-        font-size: 42px;
+    /* NAVIGATION FIX: Stack links vertically, adjust padding for better spacing */
+    nav {
+        flex-direction: column;
+        padding: 15px 0;
     }
 
-    /* Optional: Slightly reduce padding for smaller screens */
+    .nav-links {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .nav-links a {
+        margin: 0 10px; /* Space out the links horizontally */
+        display: inline-block;
+    }
+
+    /* SKILLS FIX: Change to a 3-column grid for better use of space */
+    .skills-grid {
+        /* Use 3 columns on mobile */
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 10px;
+    }
+
+    /* Icon size reduced to 36px for moderate mobile sizing */
+    #contact .social-links a {
+        font-size: 36px;
+        gap: 20px;
+    }
+
+    /* Optional: Slightly reduce padding for smaller sections */
     .hero {
-        padding: 90px 20px;
+        padding: 70px 20px;
+    }
+
+    /* FOOTER FIX: Reduce font size */
+    footer {
+        font-size: 12px;
     }
 }
