@@ -3,7 +3,8 @@ body {
     margin: 0;
     font-family: "Segoe UI", sans-serif;
     color: #111;
-    background: linear-gradient(160deg, #0A1A2F 0%, #0F4C81 40%, #E8EEF4 100%);
+    /* --- UPDATED GRADIENT FOR SMOOTHER TRANSITION --- */
+    background: linear-gradient(160deg, #0A1A2F 0%, #0F4C81 40%, #B2D0E6 100%);
     background-attachment: fixed;
 }
 
@@ -169,27 +170,24 @@ nav {
     backdrop-filter: blur(8px);
 }
 
-/* --------- Contact Section (NEW) --------- */
-
-/* Old #contact p styles removed here */
-
+/* --------- Contact Section --------- */
 #contact .social-links {
     display: flex;
     justify-content: center;
-    gap: 30px; /* Space between icons */
+    gap: 30px;
     margin-top: 40px;
 }
 
 #contact .social-links a {
-    font-size: 38px; /* Size of the icon */
-    color: #f1f1f1; /* Icon color */
+    font-size: 38px; /* Base size for icons (PC) */
+    color: #f1f1f1;
     transition: 0.3s ease;
-    padding: 10px; /* Make the click area slightly larger */
+    padding: 10px;
     border-radius: 50%;
 }
 
 #contact .social-links a:hover {
-    color: #0F4C81; /* Blue color on hover */
+    color: #0F4C81;
     background: #fff;
     transform: translateY(-5px) scale(1.1);
     box-shadow: 0 5px 15px rgba(0,0,0,0.4);
@@ -203,4 +201,18 @@ footer {
     color: #cfcfcf;
     font-size: 14px;
     margin-top: 80px;
+}
+
+/* --------- Media Query for Mobile (Adjustments) --------- */
+@media (max-width: 768px) {
+
+    /* Increase the social icon size for better tapping/visibility on mobile */
+    #contact .social-links a {
+        font-size: 48px;
+    }
+
+    /* Optional: Slightly reduce padding for smaller screens */
+    .hero {
+        padding: 90px 20px;
+    }
 }
