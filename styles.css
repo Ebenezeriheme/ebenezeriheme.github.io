@@ -3,8 +3,8 @@ body {
     margin: 0;
     font-family: "Segoe UI", sans-serif;
     color: #111;
-    /* --- UPDATED GRADIENT FOR SMOOTHER TRANSITION --- */
-    background: linear-gradient(160deg, #0A1A2F 0%, #0F4C81 40%, #B2D0E6 100%);
+    /* --- UPDATED GRADIENT: Darker, Purplish end-stop --- */
+    background: linear-gradient(160deg, #0A1A2F 0%, #0F4C81 40%, #7788AA 100%);
     background-attachment: fixed;
 }
 
@@ -206,9 +206,9 @@ footer {
 /* --------- Media Query for Mobile (Adjustments) --------- */
 @media (max-width: 768px) {
 
-    /* Increase the social icon size for better tapping/visibility on mobile */
+    /* Icon size reduced from 48px to 42px for mobile */
     #contact .social-links a {
-        font-size: 48px;
+        font-size: 42px;
     }
 
     /* Optional: Slightly reduce padding for smaller screens */
