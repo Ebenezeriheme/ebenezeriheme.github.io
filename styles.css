@@ -169,13 +169,32 @@ nav {
     backdrop-filter: blur(8px);
 }
 
-/* --------- Contact Section --------- */
-#contact p {
-    text-align: center;
-    max-width: 600px;
-    margin: 12px auto;
-    color: #e8e8e8;
+/* --------- Contact Section (NEW) --------- */
+
+/* Old #contact p styles removed here */
+
+#contact .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between icons */
+    margin-top: 40px;
 }
+
+#contact .social-links a {
+    font-size: 38px; /* Size of the icon */
+    color: #f1f1f1; /* Icon color */
+    transition: 0.3s ease;
+    padding: 10px; /* Make the click area slightly larger */
+    border-radius: 50%;
+}
+
+#contact .social-links a:hover {
+    color: #0F4C81; /* Blue color on hover */
+    background: #fff;
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
 
 /* --------- Footer --------- */
 footer {
